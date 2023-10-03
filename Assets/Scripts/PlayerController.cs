@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D theRb;
     private Animator anim;
     private SpriteRenderer spriteRenderer;
+    private bool facingLeft = false;
+
 
     private void Awake()
     {
@@ -56,11 +58,19 @@ public class PlayerController : MonoBehaviour
         if(mosePos.x < playerScreenPoint.x)
         {
             spriteRenderer.flipX = true;
+            FacingLeft = true;
         }
         else
         {
             spriteRenderer.flipX = false;
+            FacingLeft = false;
         }
     }
+
+
+    // getter and setter in one line
+    
+     public bool FacingLeft { get { return facingLeft; } set { facingLeft = value; } }
+
     
 }
