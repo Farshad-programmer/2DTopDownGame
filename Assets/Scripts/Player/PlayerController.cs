@@ -12,10 +12,11 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spriteRenderer;
     private bool facingLeft = false;
-
+    public static PlayerController instance;
 
     private void Awake()
     {
+        instance = this;
         playerControls = new PlayerControls();
         theRb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();

@@ -304,13 +304,14 @@ GameObject:
   m_Component:
   - component: {fileID: 295409096}
   - component: {fileID: 295409097}
+  - component: {fileID: 295409098}
   m_Layer: 0
   m_Name: Weapon Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &295409096
 Transform:
   m_ObjectHideFlags: 0
@@ -377,6 +378,19 @@ PolygonCollider2D:
       - {x: 1.6769913, y: -1.2008002}
       - {x: 2.0125537, y: 0.25941437}
   m_UseDelaunayMesh: 0
+--- !u!114 &295409098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295409095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51b7a7c86046c141bb42589b1faebc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 1
 --- !u!1 &303631798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,6 +1057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slashAnimPrefab: {fileID: 3412709039809441532, guid: de58b12307af6334caac1eb113e14a17, type: 3}
   slashAnimSpawnPoint: {fileID: 1240391676}
+  weaponCollider: {fileID: 295409096}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
